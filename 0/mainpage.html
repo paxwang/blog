@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="third-party/loaders.css/loaders.min.css">
+    <script src="js/jquery.waitforimages.js"></script>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--FULLPAGE.JS-->
+    <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullPage.css" />
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+        <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="js/fullpage/vendors/jquery.easings.min.js"></script>
+        <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="js/fullpage/vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/fullpage/jquery.fullPage.js"></script>
+    <!--END OF FULLPAGE.JS-->
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <!--END OF FONT-->
+    <!--PARALLAX-->
+    <!--<script type="text/javascript" src="third-party/jparallax/js/jquery.event.frame.js"></script>-->
+    <!--<script type="text/javascript" src="third-party/jparallax/js/jquery.parallax.js"></script>-->
+    <!--<script type="text/javascript" src="third-party/jparallax/js/jquery.parallax.min.js"></script>-->
+    <!--<script type="text/javascript" src="third-party/jparallax/js/jquery.parallax_1.0.js"></script>-->
+    <script type="text/javascript" src="third-party/jparallax/js/parallax.js"></script>
+    <link rel="stylesheet" type="text/css" href="third-party/jparallax/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="third-party/jparallax/css/jquery.parallax.css"/>
+
+    <script src="//cdn.bootcss.com/jquery.waitforimages/2.2.0/jquery.waitforimages.js"></script>
+
+    <title>VIA学院</title>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                css3:true,
+                menu: '#menu',
+                anchors:['firstPage','secondPage','thirdPage'],
+                'onLeave': function(index, nextIndex, direction){
+                    if(index==1 && nextIndex == 2){
+                        $('#section1-bg-img').addClass('section1-bg-img-blur');
+                        $('#section1-bg-img').removeClass('section1-bg-img-unblur');
+                    }
+                    else if(index==2 && nextIndex == 1){
+                        $('#section1-bg-img').removeClass('section1-bg-img-blur');
+                        $('#section1-bg-img').addClass('section1-bg-img-unblur');
+                    }
+                },
+            });
+//          **parallex
+            var scene = document.getElementById('main-section');
+            var parallax = new Parallax(scene);
+
+
+//            $('#section1-bg-img').waitForImages().done(function() {
+//                alert('x')
+//            });
+
+        });
+        //canvas画布分析
+//        window.onload = function(){
+//            var canvas = document.getElementById("secpage-timeline");
+//            canvas.width = 1200;
+//            canvas.height = 500;
+//            var context = canvas.getContext("2d");
+//
+//            context.lineWidth = 5;
+//            context.strokeStyle = "rgb(226,67,72)";//#5091A4
+////            rgb(182,76,24)
+////            rgb(214,140,35)
+////            rgb(67,92,64)
+//
+//            context.beginPath();
+//            context.moveTo(0,400);
+//
+//            context.bezierCurveTo(0,0,0,0,150,0);
+//            context.bezierCurveTo(300,0,150,450,400,400);
+//            context.bezierCurveTo(300,0,450,300,450,0);
+//
+//            context.stroke();
+//
+//        }
+
+    </script>
+</head>
+<body style="background-color: white">
+
+<!--<div id="loading" style="width: 100%;height: 100%;background: #f8656d;">-->
+    <!--<div class="loader" style="position: absolute;left: 50%;top: 50%">-->
+        <!--<div class="loader-inner pacman">-->
+            <!--<div></div><div></div><div></div><div></div><div></div></div></div>-->
+<!--</div>-->
+
+
+<!--<ul id="menu" style="position: fixed;z-index: 9;">-->
+    <!--<li data-menuanchor="firstPage" class="active">First slide</a></li>-->
+    <!--<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>-->
+    <!--<li data-menuanchor="thirdPage"><a href="#thirdPage">Third slide</a></li>-->
+<!--</ul>-->
+
+<div id="main-section" style="width:100%;height: 100%">
+    <div id="section1-bg-img" data-depth="0.1" class="layer" ></div>
+
+    <div id="fullpage" style="float: left;position: absolute">
+        <div class="section" style="width: 100%;height: 100%;">
+            <div data-depth="0.4" class="layer">
+                <img id="logo-title" src="img/via_shadow.png"
+                     class="logo-title logo-title-size img-responsive"/>
+            </div>
+            <!--<div data-depth="0.15" class="lay＝er firstpage-instr">-->
+                <!--<div class="firstpage-words">-->
+                    <!--<span>Where to Meet the World</span>-->
+                <!--</div>-->
+                <!--<div class="firstpage-black">-->
+                    <!--<span>Leadership Friendship Professional</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <a href="#secondPage" style="text-align: center">
+                <div id="next-btn" data-depth="0.25" class="img-circle icon-next img-responsive layer icon-next-size"
+                     style="text-align:center">
+                    <img src="img/down-arrow.png" width="40px" height="45px" style="margin-top: 10px"/>
+                    <!--<img src="" class="img-responsive" style="margin: 10px auto auto;z-index: 4"/>-->
+                </div>
+            </a>
+
+
+        </div>
+        <div class="section secpage" style="height: 100%;background: url('img/sec-shaodow.png') center;background-size:
+        cover">
+            <div class="container secpage-container">
+                <div class="row secpage-pic">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="height: 100%">
+                        <a href="viax-live-list.html">
+                            <div data-depth="0.22" class="secpage-live-size secpage-live layer">
+                                <div>
+                                    Feel the vibes at<br>
+                                    <span>Via Live</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="height: 100%">
+                        <a href="viax-live-list.html">
+                            <div data-depth="0.18" class="secpage-admission-size secpage-admission layer">
+                                <div>
+                                    Touch the science through<br>
+                                    <span>Via Admission</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="height: 100%">
+                        <a href="viax-program-list.html">
+                            <div data-depth="0.20" class="secpage-program secpage-program-size layer">
+                                <!--<img src="img/sec-shaodow.png" style="overflow: hidden"/>-->
+                                <div>
+                                    Participate in great<br>
+                                    <span>Via Program</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-depth="0" style="height: 40%;overflow: scroll;">
+                <div id="secpage-timeline" data-depth="0.12"
+                        class="hidden-xs col-lg-12 col-md-12 col-sm-12 layer"
+                        style="height: 100%;background:
+                        url('img/sec-timeline-curve4.png') no-repeat center;background-size: 100% 80%;">
+                    <a href="viax-live-list.html">
+                        <div>
+                            <div></div>
+                            <span>Dr. Ma Live</span>
+                            <i class="arrow"></i>
+                        </div>
+                    </a>
+
+                    <a href="viax-admission-list.html">
+                        <div>
+                            <div></div>
+                            <span>NYU Admission</span>
+                            <i class="arrow"></i>
+                        </div>
+                    </a>
+                    <a href="viax-program-list.html">
+                        <div>
+                            <div></div>
+                            <span>Online Research</span>
+                            <i class="arrow"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div  class="section" style="height: 100%;background: red">
+            <div id="aboutus">
+                <div class="container">
+                    <div class="row layer" data-depth="0.02">
+                        <p class="">
+                            We are ViaX, a strong global organization<br>
+                            that aims to serve all the students<br>
+                            with the dream to become better.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="footer" class="container" style="padding: 0;margin: 0;width: 100%">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center;">
+                            <span style="margin: auto;height: 10px;width: 100%">
+                                <p style="text-align: center;">
+                                    Contact
+                                </p>
+                                <p style=";position: absolute;top: 0;width: 100%">
+                                    +86-010-57280597
+                                </p>
+                            </span>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center">
+                            <span style="margin: auto;height: 10px;width: 100%">
+                                <p style="text-align: center;">
+                                    Email
+                                </p>
+                                <p style=";position: absolute;top: 0;width: 100%">
+                                    hr@liuxuego.org
+                                </p>
+                            </span>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align: center">
+                            <span style="margin: auto;height: 10px;width: 100%">
+                                <p style="text-align: center;">
+                                    Wechat
+                                </p>
+                                <p style=";position: absolute;top: 0;width: 100%">
+                                    ViaX
+                                </p>
+                            </span>
+
+                            <!--<img src="img/wechat.jpg" width="80px" height="80px">-->
+                        </div>
+                    </div>
+                    <!--<div class="row" style="bottom: 0%;">-->
+                        <!--<p style="text-align: left;color: rgb(230,230,231);margin-left: 15px">-->
+                            <!--CopyRight@北京西天取经科技有限公司, 中关村创业大街2楼3曾氪空间-->
+                        <!--</p>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

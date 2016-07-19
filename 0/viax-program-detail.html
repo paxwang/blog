@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no ">
+
+    <title>LUM国际项目|ViaX学院</title>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.m.js"></script>
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var fold = $(window).height() + $(window).scrollTop();
+//                alert($("#program-detail-button").offset().top);
+                var flag = 0;
+//                alert();
+                if($(window).scrollTop() < document.getElementById('program-detail-pic').clientHeight){
+                    $("#program-detail-button").removeClass('program-detail-button-float');
+                    $(".navibar").show();
+
+                }
+                else if( $(window).scrollTop() > $("#program-detail-button").offset().top){
+                    $("#program-detail-button").addClass('program-detail-button-float');
+                    $(".navibar").hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body style="height: 100%;background: rgb(250,250,250);">
+
+<div class="navibar hidden-xs" style="position: fixed;top:0;width: 100%;z-index:9999">
+    <ul class="nav nav-pills" style="float:right;list-style: none;">
+        <li style="float:left;margin-top:8px;margin-bottom:8px;border-right:2px solid white"><a href="mainpage.html">Home</a></li>
+        <li style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="#">Live</a></li>
+        <li style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="#">Admission</a></li>
+        <li class="active" style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="viax-program-list.html">Program
+        </a></li>
+    </ul>
+</div>
+<a href="viax-program-list.html" class="visible-xs header-xs" style="z-index: 2">
+    <img src="img/back-arrow.png" width="28px" height="20px" style="margin:10px 0 0 10px"/>
+</a>
+<div style="height: 100%">
+    <div id="program-detail-pic" class="program-detail-pic-size">
+    </div>
+    <div class="program-detail-pic-size">
+        <span>
+            Leave Ur Mark<br>
+            Life Changing
+        </span>
+    </div>
+
+    <div id="program-detail-button" style="margin: 0;padding: 0;width: 100%;text-align: center;z-index: 3">
+        <a href="#program-detail-info">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目信息
+            </div>
+        </a>
+        <a href="#program-detail-benefit">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目收获
+            </div>
+        </a>
+        <a href="#program-detail-schedule">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目安排
+            </div>
+        </a>
+        <a href="#program-detail-singup">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                报名流程
+            </div>
+        </a>
+    </div>
+    <div style="height: 30px"></div>
+    <div id="program-detail-content" class="container" style="margin-top: 5px;width: 100%;text-align: left">
+        <div class="row">
+            <div class="col-lg-8 col-lg-pull-2 col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1"
+                 style="margin-left: 0">
+                <div id="program-detail-info" style="padding-top: 40px;">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">关于公司</span><br>
+                            <p class="program-detail-info-words">
+                                Leave Ur Mark（LUM）：LUM是一家为全球各地想要来印度工作和发展的志愿者、实习生和旅行者的社会企业。LUM通过社区合作创新，
+                                对当地产生正向影响。我们和专业的机构、创业公司、非盈利组织合作，一起为印度更好的明天，做出给自不同的努力。
+                                LUM服务想要在印度发现机会的人，让他们获得独一无二经历的同时，给印度带来不一样的改变。（http://leaveurmark.com/
+                            </p>
+                            <span class="program-detail-info-title">关于职位</span><br>
+                            <p class="program-detail-info-words">
+                                市场研究员：洞悉最新的市场需求和市场发展，给企业最后抉择的做出给出夯实基础。了解所在行业，挖掘市场需求，
+                                通过实践和对比给出最优化推广报告和公司市场竞争力报告。
+                                产业研究员：通过了解当地产业和国情，结合自己专业知识或思维创新思路，选择教育或环境行业做研究，开发可行性项目；
+                                对比国内，优化企业结构。结合自己能力和知识，敏锐洞察市场需求，挖掘背景，对比出新，开发项目且给出项目可行性报告一份。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">招生需要</span><br>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    有上进心，工作负责
+                                </li>
+                                <li>
+                                    英语能力好，学习能力强，时间管理能力强
+                                </li>
+                                <li>
+                                    对企业战略、市场营销等商科管理有兴趣
+                                </li>
+                                <li>
+                                    专业不限
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-benefit" style="padding-top: 40px">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目收获</span>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    国际化线上实习协作经历
+                                </li>
+                                <li>
+                                    灵活个性化时间安排实习经历
+                                </li>
+                                <li>
+                                    更加专业导向和多元化实习职位选择
+                                </li>
+                                <li>
+                                    了解和学习市场调查的技巧
+                                </li>
+                                <li>
+                                    学习企业战略思维和抉择情况
+                                </li>
+                                <li>
+                                    了解企业运营，对比中美企业差异和发展
+                                </li>
+                                <li>
+                                    官方签发的实习证明
+                                </li>
+                                <li>
+                                    优秀者更是能够收到官方的邀请到美国纽约onsite实习！
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-schedule" style="padding-top: 40px">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">
+                                项目安排
+                            </span>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    7月25日-8月25日
+                                </li>
+                                <li>
+                                    每周两小时大会：LUM公司项目负责人检查进度，给出评价和指导
+                                </li>
+                                <li>
+                                    每周大会前的小组例会：组内总结本周工作，提出问题和解决方案，小组讨论，给出下周工作分配
+                                </li>
+                                <li>
+                                    每天工作基础交流和问题解决
+                                </li>
+                                <li>
+                                    每周发放学习资料
+                                </li>
+                                <li>
+                                    8月26日
+                                </li>
+                                <li>
+                                    大会Presentation-LUM公司执行官点评
+                                </li>
+                                <li>
+                                    组员评价和交流
+                                </li>
+                                <li>
+                                    发放LUM签发实习
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-singup" style="padding-top: 40px">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="#" data-toggle="popover" title="Example popover">
+                                <span class="program-detail-info-title">报名方式</span>
+                            </a>
+
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    在平台支付申请费用，填写相关信息，交代及时关注邮箱<br>
+                                    <span style="font-size: 0.8em">＊报名后和项目执行中因自身缘故退出，不退申请费</span>
+                                </li>
+                            </ul>
+                            <img src="img/wechat.jpg" class="img-responsive" width="50%">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="program-detail-info-title">项目形式</span>
+                        <ul class="program-detail-info-words">
+                            线上
+                            <li>
+                                每周一次语音会或视频会议
+                            </li>
+                            <li>
+                                每天小组update
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <span class="program-detail-info-title">申请费</span><br>
+                        <p class="program-detail-info-words">
+                            330元（面试、材料筛选、资料递交费等）<br>
+                            ＊成功报名后客服联系确认信息和面试时间<br>
+                            ＊若不能通过面试折则获得LUM执行官课程一节（Online Workshop）以及大牛的Resume Book<br><br><br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

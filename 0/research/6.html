@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>基于强氧化性自由基的甲烷消除技术研究及装置设计</title>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/program-detail.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.m.js"></script>
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var fold = $(window).height() + $(window).scrollTop();
+//                alert($("#program-detail-button").offset().top);
+                var flag = 0;
+//                alert();
+                if($(window).scrollTop() < document.getElementById('program-detail-pic').clientHeight){
+                    $("#program-detail-button").removeClass('program-detail-button-float');
+                    $(".navibar").show();
+
+                }
+                else if( $(window).scrollTop() > $("#program-detail-button").offset().top){
+                    $("#program-detail-button").addClass('program-detail-button-float');
+                    $(".navibar").hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body style="height: 100%;background: rgb(250,250,250);">
+
+<div class="navibar hidden-xs" style="position: fixed;top:0;width: 100%;z-index:9999">
+    <ul class="nav nav-pills" style="float:right;list-style: none;">
+        <li style="float:left;margin-top:8px;margin-bottom:8px;border-right:2px solid white"><a href="../mainpage.html">Home</a></li>
+        <li style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="#">Live</a></li>
+        <li style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="#">Admission</a></li>
+        <li class="active" style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="../viax-program-list.php">Program
+        </a></li>
+    </ul>
+</div>
+<a href="../viax-program-list.php" class="visible-xs header-xs" style="z-index: 2">
+    <img src="../img/back-arrow.png" width="28px" height="20px" style="margin:10px 0 0 10px"/>
+</a>
+<div style="height: 100%">
+    <div id="program-detail-pic" class="program-detail-pic-size"
+         style="background: url('pic/6.jpg') no-repeat center;background-size: cover;">
+    </div>
+    <div class="program-detail-pic-size">
+        <span>
+            Gas Explosion Solution
+        </span>
+    </div>
+
+    <div id="program-detail-button" style="margin: 0;padding: 0;width: 100%;text-align: center;z-index: 3">
+        <a href="#program-detail-info">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目信息
+            </div>
+        </a>
+        <a href="#program-detail-benefit">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目产出
+            </div>
+        </a>
+        <a href="#program-detail-schedule">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                课程内容
+            </div>
+        </a>
+        <a href="#program-detail-singup">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                报名流程
+            </div>
+        </a>
+    </div>
+    <div style="height: 30px"></div>
+    <div id="program-detail-content" class="container" style="margin-top: 5px;width: 100%;text-align: left">
+        <div class="row">
+            <div class="col-lg-8 col-lg-pull-2 col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1"
+                 style="margin-left: 0">
+                <div id="program-detail-info" style="padding-top: 40px;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="lecturer/6.jpg" class="img-responsive img-rounded" >
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <p class="program-detail-lecturer-name">田耀森</p>
+                            <p class="program-detail-lecturer-education">
+                                北京科技大学 理科实验班专业 材料物理专业 学士<br>
+                                UC Berkeley 材料科学与工程系 博士<br>
+                                曾获国际大学生数学建模竞赛一等奖等国际、国家级学科（科技）竞赛奖项10余次
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目背景</span><br>
+                            <p class="program-detail-info-words">
+                                自工业化以来，温室气体大量排放。研究表明：甲烷的温室效应是二氧化碳的20-24倍，
+                                我国每年因采煤而排放的甲烷居世界第一。而瓦斯爆炸也一直是困扰采矿业的重大难题。<br>
+                                因此我们着眼于矿井环境中的污染物瓦斯气体的消除。少量的污染物可在自然环境内部循环净化，
+                                在此过程中，大气环流中氧化性自由基与污染物的反应发挥了重要作用。我们可以在人工条件下创造自由基环境，
+                                实现甲烷安全氧化，解决瓦斯爆炸与污染问题。<br>
+                                传统净化甲烷的方法是高温催化氧化，但存在着以下三点弊端：<br>
+                                1、高温条件耗能巨大，催化条件苛刻<br>
+                                2、氧化效率不高，氧化不完全的产物造成二次污染<br>
+                                3、催化剂制备困难，成本过高
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目名称</span><br>
+                            <p class="program-detail-info-words">基于强氧化性自由基的甲烷消除技术研究及装置设计</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-benefit" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目产出</span>
+                            <ul class="program-detail-info-words">
+                                本项目建议2-4位同学组成团队同时参加。
+                                <li>
+                                    通过基础知识学习、相关文献阅读，了解瓦斯爆炸现状以及传统解决方案的弊端与局限。
+                                </li>
+                                <li>
+                                    以学员自学、讨论、向导师展示、导师提出思考问题与指导建议，全方位提升学员自我探究的能力，同时帮助学员了解项目背景与基本原理。
+                                </li>
+                                <li>
+                                    在团队合作与导师指导下，在课后设计装置、实验、测试，完成项目。本项目按照项目背景、学术原理、装置设计、实验测试、结果分析的标准科研逻辑展开
+                                </li>
+                                <li>
+                                    全面提高学员发现问题、分析问题、解决问题的能力。
+                                </li>
+                                <li>
+                                    本项目的成果将有：调查报告、自主设计的实验装置、自主设
+                                    计的实验方案与测试数据、（潜在）一篇或多篇国内中等水平的学术论文。完成本项目与美国、国内一流大学化学专业、材料科学专业本科生水平接近。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">适用学科方向</span><br>
+                            <span class="program-detail-info-words">
+                                物理、化学、材料科学等STEM相关专业。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-schedule" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">
+                                课程内容
+                            </span>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    1-2节：学员了解、项目介绍.认识项目的内容，尽快熟悉
+                                </li>
+                                <li>
+                                    3-8节：了解传统甲烷气体消除的现状与局限
+                                </li>
+                                <li>
+                                    9-16节：学习强氧化性自由基消除甲烷的基本原理
+                                </li>
+                                <li>
+                                    17-28节：知道学员进行实验装置的设计，与学员共同完成设计方案，由学员（团队）自主进行装置制作
+                                </li>
+                                <li>
+                                    29-38节：协助学员进行实验方案的设计
+                                </li>
+                                <li>
+                                    39-60节：按照实验方案指导学员进行实验，并由学员向导师展示，导师提出意见以及下阶段问题的形式，对实验数据进行整理、分析、总结
+                                </li>
+                                <li>
+                                    61-80节：对项目进行总结，如果项目进展顺利，由学员自发进行项目成果延伸，导师可进行有偿额外指导或资源辅助。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-singup" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">阶段性考察</span><br>
+                            <p class="program-detail-info-words">
+                                阶段性考试分为开卷课后考试和Presentation答辩。<br>
+                                其中Presentation答辩环节会模拟美国大学PhD Qualify Exam答辩形式。由至少3名导师组成答辩委员会，对学生进行考核。<br>
+                                该环节在检查审核学生知识掌握情况的同时，模拟申请中可能遇到的面试及答辩环节。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="#" data-toggle="popover" title="Example popover">
+                                <span class="program-detail-info-title">报名方式</span>
+                            </a>
+
+                            <p class="program-detail-info-words">
+                                电联：010-57280597 或<br>
+                                扫描二维码添加ViaX助手Henry咨询<br>
+                                联系Henry可获得导师免费科研计划定制一课时<br>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
+                                <img src="../img/wechat.jpg" class="img-responsive" width="50%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

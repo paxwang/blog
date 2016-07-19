@@ -1,0 +1,240 @@
+
+
+
+
+ul li a:visited{
+   color:blue;
+}
+ul li a:hover{
+	color:rgb(190,190,190) !important;
+}
+
+
+#list_section1_img{
+	height:70%;
+	background: url(../img/program/IMG_0398.JPG) no-repeat center;
+	background-size: cover;
+	border-bottom: 2px solid white;
+}
+.list_section1_mask{
+	width:100%;
+	height:100%;
+	display: table;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+.section1_info_title{
+	font-size:4em;
+	color:rgba(255,255,255,0.8);
+	font-family:'Montserrat',sans-serif;
+}
+.section1_info_detail{
+	font-size: 2em;
+	/*color:rgba(255,255,255,0.8);*/
+	font-family:'Montserrat',sans-serif ;
+}
+
+.section1_info_line{
+	height:1px;
+	width:50%;
+	margin:10px auto 0 auto;
+	background-color:#ffffff;
+}
+#section1_info{
+	padding:10px;
+	display:table-cell;
+	vertical-align:middle;
+	position:relative;
+}
+
+.list_section1_mask:hover .section1_info_title{
+	color:#f8656c;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+
+.page-title{
+	font-size: 3em;
+	color: gray;
+}
+
+.page-content{
+	font-size: 1.5em;
+	color: black;
+	background-color: gray;
+}
+
+button:hover{
+	background-color: white;
+}
+
+@media(max-width: 768px){
+	.sl{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.section1_info_title{
+		font-size:2em;
+		color:#f8656c;
+		font-family:'Montserrat',sans-serif;
+	}
+	.section1_info_detail{
+		font-size: 1.5em;
+		color:rgba(255,255,255,1);
+		font-family:'Montserrat',sans-serif ;
+		/*background: rgba(1,1,1,0.2);*/
+	}
+}
+
+#homepage_img:hover{
+
+}
+
+@font-face {
+	font-family:'AdobeHeitiStd';
+	src: url('../fonts/AdobeHeitiStd.otf');
+}
+ul li{
+	float:left;
+	font-family: 'Open Sans', sans-serif;
+}
+ li a{
+	 color:black;
+ }
+
+ #pic_1{
+	 height:100%;
+	 background: url(../img/program/IMG_0471.JPG) no-repeat center ;
+	 background-size:cover;
+
+ }
+ #pic_2{
+	 height:100%;
+	 background: #f8656c;
+	 background-size:cover ;
+	 text-decoration: none;
+
+ }
+
+ #pic_3{
+	 height:100%;
+	 background: url(../img/program/IMG_0559.JPG) no-repeat center;
+	 background-size:cover ;
+	 border-top: 2px solid white;
+ }
+ #pic_4{
+	 height:100%;
+	 background: url(../img/program/IMG_1671.JPG) no-repeat center;
+	 background-size:cover ;
+	 border-top: 2px solid white;
+ }
+#pic_5{
+	height:100%;
+	background: url(../img/program/program1.jpg) no-repeat center;
+	background-size:cover ;
+	border-top: 2px solid white;
+}
+#pic_6{
+	height:100%;
+	background: url(../img/program/IMG_9689.JPG) no-repeat center;
+	background-size:cover ;
+	border-top: 2px solid white;
+}
+@media only screen and (min-width:992px) {
+    #pic_1{
+		border-right: 2px solid white;
+	}
+	#pic_3{
+		border-right: 2px solid white;
+	}
+	#pic_5{
+		border-right: 2px solid white;
+	}
+}
+@media screen and (max-width: 991px) {
+	#pic_1{
+		border-bottom: 2px solid white;
+	}
+}
+
+.text_area{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	background:rgba(255,255,255,0);
+	-webkit-transition: background 1000ms;
+	-moz-transition: background 1000ms;
+	-ms-transition: background 1000ms;
+	-o-transition: background 1000ms;
+	transition: background 1000ms;
+	/*background: rgba(255,255,255,0.7);*/
+}
+
+
+.text_area:hover{
+	/*background:rgba(255,255,255,0.7);*/
+}
+
+.text_title{
+	position: relative;
+	top:10px;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0;
+	font-size: 1.8em;
+	color:white;
+	font-family:'Montserrat',sans-serif;
+	border-bottom:2px solid white;
+	opacity:0;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+
+.text_content{
+	position:relative;
+	top:80%;
+	padding:0;
+	margin:0;
+	font-size:1.5em;
+	color:rgba(255,255,255,0.8);
+	font-family:'PT Sans Narrow',sans-serif;
+	opacity: 0;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+.text_area{
+	width:100%;
+	opacity: 0;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+
+.text_area:hover{
+	opacity: 1;
+	background: rgba(0,0,0,0.5);
+}
+.text_area:hover .text_content{
+	position:relative;
+	top:40%;
+	opacity: 1;
+}
+.text_area:hover .text_title{
+	position:relative;
+	top:40%;
+	opacity: 1;
+}

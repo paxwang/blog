@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>电动滑板设计及智能交通工具研究</title>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/program-detail.css">
+    <!--<link rel="stylesheet" href="../css/styles.css">-->
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.m.js"></script>
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var fold = $(window).height() + $(window).scrollTop();
+//                alert($("#program-detail-button").offset().top);
+                var flag = 0;
+//                alert();
+                if($(window).scrollTop() < document.getElementById('program-detail-pic').clientHeight){
+                    $("#program-detail-button").removeClass('program-detail-button-float');
+                    $(".navibar").show();
+
+                }
+                else if( $(window).scrollTop() > $("#program-detail-button").offset().top){
+                    $("#program-detail-button").addClass('program-detail-button-float');
+                    $(".navibar").hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body style="height: 100%;background: rgb(250,250,250);">
+
+<div class="navibar hidden-xs" style="position: fixed;top:0;width: 100%;z-index:9999">
+    <ul class="nav nav-pills" style="float:right;list-style: none;">
+        <li style="float:left;margin-top:8px;margin-bottom:8px;border-right:2px solid white"><a href="../mainpage.html">Home</a></li>
+        <li style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="#">Live</a></li>
+        <li style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="#">Admission</a></li>
+        <li class="active" style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="../viax-program-list.php">Program
+        </a></li>
+    </ul>
+</div>
+<a href="../viax-program-list.php" class="visible-xs header-xs" style="z-index: 2">
+    <img src="../img/back-arrow.png" width="28px" height="20px" style="margin:10px 0 0 10px"/>
+</a>
+<div style="height: 100%">
+    <div id="program-detail-pic" class="program-detail-pic-size" style="background: url('pic/0.jpg') no-repeat center;background-size: cover;">
+    </div>
+    <div class="program-detail-pic-size">
+        <span style="line-height: 1.3">
+            Intelligent Transportation<br>
+            Scientific Research
+        </span>
+    </div>
+
+    <div id="program-detail-button" style="margin: 0;padding: 0;width: 100%;text-align: center;z-index: 3">
+        <a href="#program-detail-info">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目信息
+            </div>
+        </a>
+        <a href="#program-detail-benefit">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目产出
+            </div>
+        </a>
+        <a href="#program-detail-schedule">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                课程内容
+            </div>
+        </a>
+        <a href="#program-detail-singup">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                报名流程
+            </div>
+        </a>
+    </div>
+    <div style="height: 30px"></div>
+    <div id="program-detail-content" class="container" style="margin-top: 5px;width: 100%;text-align: left">
+        <div class="row">
+            <div class="col-lg-8 col-lg-pull-2 col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1"
+                 style="margin-left: 0">
+                <div id="program-detail-info" style="padding-top: 40px;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="lecturer/0.jpg" class="img-responsive img-rounded" >
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <p class="program-detail-lecturer-name">张曦</p>
+                            <p class="program-detail-lecturer-education">
+                                电子科技大学 应用物理系学士<br>
+                                UCBerkeley 电子工程及计算机系 博士
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">导师寄语</span><br>
+                            <p class="program-detail-info-words">
+                                工程学的魅力在于它与实际环环相扣却又不断创造着奇迹。读史使人明智,读诗使人聪慧。而工程师们，作为这个世界
+                                上最有魅力的职业之一，他们突破人类想象空间的壁垒，将不可能变为可能，将二维的纸上谈兵转化为三维的发明创造。
+                            </p>
+                            <span class="program-detail-info-title">项目背景</span><br>
+                            <p class="program-detail-info-words">
+                                智能、便捷是未来人类交通工具的两大发展趋势，随着石油资源的开采和枯竭，人类对于新型清洁能源开发和安全使
+                                用的关注不断提升。马斯克的特斯拉电动车、谷歌的无人汽车，各式各类的新能源交通工具正以势不可挡的热度改变
+                                着人类传统出行的观念。让机器具有学习的能力，在便捷的基础上面加上安全和人性化的体验，是当前研究、
+                                商业的最火、最有挑战性的领域之一。在设计一个你专属的智能电动滑板的过程中，你会发觉书本上枯涩的物理电磁学公式独具魅力，
+                                你会了解到编程之美，你会发觉原来你的创造力不亚于乔布斯。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目名称</span><br>
+                            <p class="program-detail-info-words">电动滑板设计及智能交通工具研究</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目目的</span><br>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    通过理论研究，指导学生掌握物理学、编程、蓝牙通信技术以及机器学习的原理知识
+                                </li>
+                                <li>
+                                    通过实际设计四驱电动滑板，指导学生掌握安全电路设计、手机app设计及实现稳定蓝牙通信的技术要点
+                                </li>
+                                <li>
+                                    免费提供相关国际科研文献。通过思维风暴和讨论引导学生形成创新思维、
+                                    培养学生阅读学术英文的能力、帮助学生建立独立设计科研项目的能力，从而明确学生的未来科研方向
+                                </li>
+                                <li>
+                                    项目完成圆满，可以带领学生向相关期刊投稿以及协助申请专利
+                                </li>
+                                <li>
+                                    提供与风投公司大佬视频面对面英文对话机会，培养学生创业意识，对于特别优秀的产品，导师将协助学生进行市场推广
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-benefit" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目产出</span>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    掌握工业级电路设计技能，掌握蓝牙通信开发能力，掌握手机app开发基本技能。并亲手制作一个可用手机控制的电动滑板。
+                                </li>
+                                <li>
+                                    符合学术专业会议标准的中英文Poster，并训练项目演讲技巧，达到参与专业会议PosterSection的标准，并能熟练回答申请高校面试过程中相关问题。
+                                </li>
+                                <li>
+                                    符合学术专业论文标准的中文期刊一篇或英文期刊一篇。并至少保证有其中一篇发表于专业期刊上。
+                                    （受限于学生完成程度及创新程度，期刊包括但不限于中文期刊，中文核心期刊，英文EI会议期刊，英文EI，SCI检索期刊）。
+                                    依据实际情况，尽全力发表到更高等级期刊上。
+                                </li>
+                                <li>
+                                    完成符合高校申请要求的科研演讲视频制作。并可辅助完成专业的科研演讲指导。并以此成果辅导参加相关的科研，创新，学术类型比赛。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">适用学科方向</span><br>
+                            <span class="program-detail-info-words">
+                                适用于所有STEM相关专业。特别适用于电子工程、物理、计算机等相关专业。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-schedule" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">
+                                课程内容
+                            </span>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    1节：项目介绍
+                                </li>
+                                <li>
+                                    2-5节：了解电动滑板基础原理并准备相关材料.Python编程语言及电机知识课程。引导学生完成电动滑板的基本功能编程实现。
+                                </li>
+                                <li>
+                                    6-10节：蓝牙通信原理课程。帮助学生完成手机app的设计、建立手机与滑板的数字蓝牙通信。鼓励学生对自己
+                                    的滑板添加独特的功能，根据学生自身爱好设立后续科研项目。
+                                </li>
+                                <li>
+                                    11-15节：进阶电路设计和电路安全课程。
+                                    帮助学生完成实际电路的设计，并对电路进行安全性优化，达到工业级安全要求。
+                                </li>
+                                <li>
+                                    16-20节：滑板电子线路的搭建、电子线路与程序的整合及优化。根据学生个人的科研计划，辅导学生实现滑板的高级智能功能。
+                                    滑板的实际测试、最后优化。模拟硅谷创业公司进行比赛，邀请风投公司大佬与学生视频面对面英文点评。
+                                    学生完成项目汇报书，优秀者协助发表论文、申请专利（进行市场推广）。
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-singup" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">阶段性考察</span><br>
+                            <p class="program-detail-info-words">
+                                阶段性考试分为开卷课后考试和Presentation答辩。<br>
+                                其中Presentation答辩环节会模拟美国大学PhD Qualify Exam答辩形式。<br>
+                                由至少3名导师组成答辩委员会，对学生进行考核。该环节在检查审核学生知识掌握情况的同时，模拟申请中可能遇到的面试及答辩环节。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="#" data-toggle="popover" title="Example popover">
+                                <span class="program-detail-info-title">报名方式</span>
+                            </a>
+
+                            <p class="program-detail-info-words">
+                                电联：010-57280597 或<br>
+                                扫描二维码添加ViaX助手Henry咨询<br>
+                                联系Henry可获得导师免费科研计划定制一课时<br>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
+                                <img src="../img/wechat.jpg" class="img-responsive" width="50%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>饮用水质量问题与健康的研究与探讨</title>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/program-detail.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.m.js"></script>
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var fold = $(window).height() + $(window).scrollTop();
+//                alert($("#program-detail-button").offset().top);
+                var flag = 0;
+//                alert();
+                if($(window).scrollTop() < document.getElementById('program-detail-pic').clientHeight){
+                    $("#program-detail-button").removeClass('program-detail-button-float');
+                    $(".navibar").show();
+
+                }
+                else if( $(window).scrollTop() > $("#program-detail-button").offset().top){
+                    $("#program-detail-button").addClass('program-detail-button-float');
+                    $(".navibar").hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body style="height: 100%;background: rgb(250,250,250);">
+
+<div class="navibar hidden-xs" style="position: fixed;top:0;width: 100%;z-index:9999">
+    <ul class="nav nav-pills" style="float:right;list-style: none;">
+        <li style="float:left;margin-top:8px;margin-bottom:8px;border-right:2px solid white"><a href="../mainpage.html">Home</a></li>
+        <li style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="#">Live</a></li>
+        <li style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="#">Admission</a></li>
+        <li class="active" style="float:left;margin-top:8px;margin-bottom:8px;margin-left:5px;"><a href="../viax-program-list.php">Program
+        </a></li>
+    </ul>
+</div>
+<a href="../viax-program-list.php" class="visible-xs header-xs" style="z-index: 2">
+    <img src="../img/back-arrow.png" width="28px" height="20px" style="margin:10px 0 0 10px"/>
+</a>
+<div style="height: 100%">
+    <div id="program-detail-pic" class="program-detail-pic-size"
+         style="background: url('pic/5.jpg') no-repeat center;background-size: cover;">
+    </div>
+    <div class="program-detail-pic-size">
+        <span>
+            Drinking Water Issue
+        </span>
+    </div>
+
+    <div id="program-detail-button" style="margin: 0;padding: 0;width: 100%;text-align: center;z-index: 3">
+        <a href="#program-detail-info">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目信息
+            </div>
+        </a>
+        <a href="#program-detail-benefit">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                项目产出
+            </div>
+        </a>
+        <a href="#program-detail-schedule">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                课程内容
+            </div>
+        </a>
+        <a href="#program-detail-singup">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="padding: 8px 0;">
+                报名流程
+            </div>
+        </a>
+    </div>
+    <div style="height: 30px"></div>
+    <div id="program-detail-content" class="container" style="margin-top: 5px;width: 100%;text-align: left">
+        <div class="row">
+            <div class="col-lg-8 col-lg-pull-2 col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1"
+                 style="margin-left: 0">
+                <div id="program-detail-info" style="padding-top: 40px;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="lecturer/5.jpg" class="img-responsive img-rounded" >
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <p class="program-detail-lecturer-name">陈见聪</p>
+                            <p class="program-detail-lecturer-education">
+                                同济大学 环境科学 学士<br>
+                                UC Berkeley 环境工程硕士<br>
+                                UC Berkeley 环境工程博士
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目背景</span><br>
+                            <p class="program-detail-info-words">
+                                环境科学与工程是一门研究环境的物理，化学，生物以及地理等部分的学科。宏观上，环境科学主要研究人与环境之间的相互作用、
+                                相互制约的关系，力图发现社会经济发展和环境保护之间协调的规律；
+                                在微观上，要研究环境中的物质在有机体内迁移、转化、蓄积的过程及其相关运动规律，从而到对生命的影响和作用机理。<br>
+                                随着全球范围内环境问题的日益突出，环境科学与工程的研究也越来越引起公众的注意，因此系统与科学地将环境科学与工程的相关知识运用到实际问题中，
+                                并解决将对改善人们地居住环境做出巨大贡献。<br>
+                                饮用水作为直接与人们的日常生活息息相关的水源载体，
+                                也是环境科学与工程中最为重要最引起大家关注的主要问题之一。因此，如何综合利用环境科学与工程的内容与知识，
+                                来量化饮用水环境的污染，并用相应地手段进行处理也显得十分必要。<br>
+                                通过对环境科学与工程基础科学的了解与深入，
+                                以及通过家庭饮用水问题的探讨与研发，学生得以意识到当今环境问题，尤其是水环境问题的严峻性与挑战性，
+                                并通过对实际问题地探索与解决，发现科学的延续性与趣味性。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目名称</span><br>
+                            <p class="program-detail-info-words">饮用水质量问题与健康的研究与探讨</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="program-detail-benefit" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">项目产出</span>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    掌握环境科学与工程基础概念，了解水污染及处理相关技术，并通过实践改进水质量问题现状
+                                </li>
+                                <li>
+                                    符合学术专业会议标准的中英文Poster，并训练项目演讲技巧，达到参与专业会议PosterSection的标准，并能熟练回答申请高校面试过程中相关问题。
+                                </li>
+                                <li>
+                                    符合学术专业论文标准的中文期刊一篇或英文期刊一篇。并至少保证有其中一篇发表于专业期刊上。（受限于学生完成程度及创新程度，期刊包括但不限于中文期刊，中文核心期刊，英文EI会议期刊，英文EI，SCI检索期刊）。依据实际情况，尽全力发表到更高等级期刊上。
+                                </li>
+                                <li>
+                                    完成符合高校申请要求的科研演讲视频制作。并可辅助完成专业的科研演讲指导。并以此成果辅导参加相关的科研，创新，学术类型比赛。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">适用学科方向</span><br>
+                            <span class="program-detail-info-words">
+                                环境科学，化学，生物，人文，政府政策等相关学科。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-schedule" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">
+                                课程内容
+                            </span>
+                            <ul class="program-detail-info-words">
+                                <li>
+                                    1节：项目介绍.认识项目的内容，尽快熟悉
+                                </li>
+                                <li>
+                                    2-5节：学习了解环境科学与工程的基础概论。着重了解环境化学的相关内容。
+                                </li>
+                                <li>
+                                    6-10节：着重了解环境微生物学的相关内容。着重了解水污染控制工程的相关内容
+                                </li>
+                                <li>
+                                    11-15节：对水环境污染，饮用水环境问题进行深入研究与探讨，包括相关社会科学内容的探讨与研究。
+                                    协助学生探索属于自己的科研方向，并根据之前所学开展探索分析。
+                                </li>
+                                <li>
+                                    16-20节：根据项目进展结果，按照标准论文格式，完成论文写作。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="program-detail-singup" style="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <span class="program-detail-info-title">阶段性考察</span><br>
+                            <p class="program-detail-info-words">
+                                阶段性考试分为开卷课后考试和Presentation答辩。<br>
+                                其中Presentation答辩环节会模拟美国大学PhD Qualify Exam答辩形式。由至少3名导师组成答辩委员会，对学生进行考核。<br>
+                                该环节在检查审核学生知识掌握情况的同时，模拟申请中可能遇到的面试及答辩环节。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="#" data-toggle="popover" title="Example popover">
+                                <span class="program-detail-info-title">报名方式</span>
+                            </a>
+
+                            <p class="program-detail-info-words">
+                                电联：010-57280597 或<br>
+                                扫描二维码添加ViaX助手Henry咨询<br>
+                                联系Henry可获得导师免费科研计划定制一课时<br>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
+                                <img src="../img/wechat.jpg" class="img-responsive" width="50%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,308 @@
+
+body{
+    width:100%;
+    height:100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html{
+    height:100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#list_section1_img{
+    height:75%;
+    background: url(../img/program_list_bg.jpg) no-repeat center;
+    background-size: cover;
+    border-bottom: 2px solid white;
+}
+.navbar-brand{
+    font-size: 2.8em;
+    color: gray;
+    text-align: left;
+}
+
+.navibar ul li a{
+    color:white!important;
+    font-family:'Montserrat',sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.list_section1_mask{
+    width:100%;
+    height:100%;
+    text-align:center;
+    display: table;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#section1_info{
+    padding:10px;
+    display:table-cell;
+    vertical-align:middle;
+    position:relative;
+}
+/*移动端适配*/
+@media(max-width: 768px){
+    #list_section1_img{
+        height:75%;
+        background: url(../img/program_list_bg11.jpg) no-repeat center;
+        background-size: cover;
+        border-bottom: 2px solid white;
+    }
+    #research_general{
+        border-bottom: 2px solid white;
+    }
+    #research_1{
+        border-bottom: 2px solid white;
+    }
+    .sl{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section1_info_title{
+        font-size:2em;
+        color:#f8656c;
+        font-family:'Montserrat',sans-serif;
+    }
+    .section1_info_detail{
+        font-size: 1.5em;
+        color:rgba(255,255,255,1);
+        font-family:'Montserrat',sans-serif ;
+        /*background: rgba(1,1,1,0.2);*/
+    }
+
+    .research_general_info{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        height: 100%
+    }
+    .research_general_title{
+        font-family:'Montserrat',sans-serif ;
+        font-size: 2em;
+        color: white;
+    }
+    .research_general_line{
+        width:90%;
+        height:2px;
+        margin-left:5%;
+        background-color: white;
+    }
+    .research_general_content{
+        font-family:'Montserrat',sans-serif ;
+        font-size: 1.5em;
+        color:white;
+    }
+    .research_mask{
+        width:100%;
+        height:100%;
+        display: table;
+        padding:0;
+        margin: 0;
+        background:rgba(1,1,1,0.5) no-repeat center;
+        background-size:cover;
+    }
+    .research_mask_info{
+        display: table-cell;
+        vertical-align: middle
+    }
+    .research_mask_info_title{
+        font-family: "Microsoft YaHei", sans-serif;
+        font-size: 1.5em;
+        color:white;
+        padding:0 0  10px 0;
+        margin: 0;
+        line-height: 1.3;
+    }
+    .research_mask_line{
+        width:90%;
+        height:2px;
+        margin-left:5%;
+        background-color: white;
+    }
+
+    .research_mask_info_lecturer{
+        font-size:1.2em ;
+        color:white;
+        line-height: 1.3;
+        padding:10px 0 0 0;
+        font-family:'Montserrat',sans-serif;
+    }
+
+    .research_label_area p {
+        width:50px;
+        float:left;
+        border-radius:3px;
+        border:1px solid white;
+        /*background-color:#F8656D;*/
+        /*margin-right:5px;*/
+        padding:0px 0px ;
+        color:white;
+        font-family: "Microsoft YaHei", sans-serif;
+        font-size:0.6em;
+    }
+
+}
+@media (max-width: 321px){
+    .research_mask_info_title_size{
+        font-size: 1.4em;
+    }
+}
+
+/*PC端适配*/
+@media (min-width: 769px) {
+
+    .section1_info_title{
+        font-size:4em;
+        color:rgba(255,255,255,0.8);
+        /*font-family:'Montserrat',sans-serif;*/
+    }
+    .section1_info_detail{
+        font-size: 2em;
+        color:rgba(255,255,255,0.8);
+        font-family:'Montserrat',sans-serif ;
+    }
+    .list_section1_mask:hover .section1_info_title{
+        color:#F8656D;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+    .research_general_info{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        height: 100%
+    }
+
+    .research_general_title{
+        font-family:'Montserrat',sans-serif ;
+        font-size: 2.8em;
+        color: white;
+    }
+
+    .research_general_line{
+        width:90%;
+        height:2px;
+        margin-left:5%;
+        background-color: white;
+    }
+
+    .research_general_content{
+        font-family:'Montserrat',sans-serif ;
+        font-size: 1.9em;
+        color:white;
+    }
+
+
+    .research_mask{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        padding:0;
+        margin: 0;
+        opacity: 0;
+        text-align: center;
+
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+
+    .research_mask:hover{
+        opacity: 1;
+        background: rgba(0,0,0,0.5);
+    }
+
+
+    .research_mask_info_title{
+        position: absolute;
+        bottom:100%;
+        width:90%;
+        margin-left:5%;
+        float:left;
+        display: block;
+        border-bottom: 2px solid white;
+        font-size: 2.5em;
+        font-family: "Microsoft YaHei", sans-serif;
+        color:white;
+        opacity: 0;
+
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+    .research_mask_line{
+    }
+
+    .research_mask_info_lecturer{
+        position: absolute;
+        width:100%;
+        bottom:0;
+        float:left;
+        font-size: 1.5em;
+        font-family:'Montserrat',sans-serif ;
+        color:white;
+        line-height: 1.5;
+        padding:10px 0 0 0;
+        opacity: 0;
+
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+    }
+    .research_mask:hover .research_mask_info{
+
+    }
+
+    .research_mask:hover .research_mask_info_title {
+        position:absolute;
+        /*top:35%;*/
+        bottom:50%;
+        opacity: 1;
+    }
+    /*.research_mask:hover .research_mask_line{*/
+        /*position: absolute;*/
+        /*top:40%;*/
+        /*opacity:1;*/
+    /*}*/
+    .research_mask:hover .research_mask_info_lecturer{
+        position:absolute;
+        bottom:42%;
+        opacity: 1;
+    }
+
+    .research_label_area p {
+        width:90px;
+        float:left;
+        border-radius:3px;
+        border:1px white solid;
+        /*border-color:#F8656D ;*/
+        /*background-color: rgba(248,101,109,0.6);*/
+        padding:0;
+        color:white;
+        /*color:#F8656D;*/
+        font-family: "Microsoft YaHei", sans-serif;
+        font-size:1em;
+    }
+
+
+
+
+}
+
